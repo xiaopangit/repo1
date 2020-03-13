@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        div{
+            background-color: antiquewhite;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script  src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //显示
+            $("#showBtn").click(function () {
+                //使用2秒的时间来显示
+                $("#myDiv").show(2000);
+            });
+            $("#hideBtn").click(function () {
+                //使用2秒的时间隐藏
+                $("#myDiv").hide(2000);
+            });
+
+            $("#fadeInBtn").click(function () {
+                //使用2秒的逐渐显示
+                $("#myDiv").fadeIn(2000);
+            });
+
+            $("#fadeOutBtn").click(function () {
+                //使用2秒的时间逐渐隐藏
+                $("#myDiv").fadeOut(2000);
+            });
+
+            //移动到指定位置
+            $("#animateBtn").click(function () {
+                $("#myDiv").animate({"margin-left":300});
+                $("#myDiv").animate({"margin-top":300});
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="showBtn">显示</button>
+<button id="hideBtn">隐藏</button>
+<br>
+<button id="fadeInBtn">渐显</button>
+<button id="fadeOutBtn">渐淡</button>
+<br>
+<button id="animateBtn">移动到指定位置</button>
+<br>
+<div id="myDiv"></div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+package com.monkey1024.crud;
+
+public class HelloWord {
+}
